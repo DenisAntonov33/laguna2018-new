@@ -6,13 +6,207 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-	<div>7</div>
-	<div>8</div>
+	<div class="container">
+
+		<div class="modal-overlay"></div>
+
+		<div class="modal-window">
+			<div class="modal-window-container">
+				<div class="modal-window__close"></div>
+				<div class="modal-window__title">Оставить заявку на бронь</div>
+				<form>
+					
+						<div class="fields__input fields__input_size-m fields__input_pseudo"><input type="date" name="" value=""></div>
+						<div class="fields__input fields__input_size-m fields__input_size-m_no-margin fields__input_pseudo"><input type="date" name=""></div>
+						<div class="fields__input fields__input_size-l fields__input_no-right-border  fields__input_pseudo number"><select id="number" name="number">
+							<option>Номер</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select></div>
+						<div class="fields__input fields__input_size-l "><input type="text" name="name" placeholder="          Введите ваше имя и фамилию"></div>
+						<div class="fields__input fields__input_size-l "><input type="tel" name="tel" pattern="+[0-9]{11}" placeholder="          Введите ваш номер телефона">
+						</div>
+						<div class="fields__input fields__input_size-l "><input type="text" name="email" placeholder="          Введите ваш e-mail">
+						</div>
+					
+						<div class="value-guests">
+							<span>Количество отдыхающих:</span>
+							<div class="value-guests-inner">
+								<button class="btn-minus"></button>
+								<span id="guest-amount">2</span>
+								<button class="btn-plus"></button>
+							</div>
+						</div>
+						<div class="main-button modal-window__main-button">Забронировать</div>
+						<span class="value-guests-outer">Ты даун, нельзя вводить буквы!</span>
+					
+				</form>
+			</div>
+		</div>
+
+		<header class="header">
+			<div class="header-top">
+				<div class="menu header-top__menu">
+					<ul>
+						<li><a class="menu__link" href="#advantages">Преимущества</a></li>
+						<li><a class="menu__link" href="#prices">Цены</a></li>
+						<li><a class="menu__link" href="#location">Расположение</a></li>
+						<li><a class="menu__link" href="#service">Услуги</a></li>
+						<li><a class="menu__link menu__link_no-margin-rigth" href="">Номера</a></li>
+					</ul>
+				</div>
+				<div class="logo header-top__logo"><a href=""></a></div>
+				<div class="contacts header-top__contacts">
+					<div class="social">
+						<a href="" ><img src="img/vk.png" alt="" src="img/vk.png" class="social__icon social__icon_adress_fb"></a>
+						<a href=""><img src="img/facebook.png" alt="" class="social__icon social__icon_adress_fb"></a>
+						<a href=""><img  src="img/booking.png" alt="" class="social__icon social__icon_adress_booking"></a>
+					</div>
+					<div class="phone social__phone">+ 7 (919) 590-23-42</div>
+				</div>
+			</div>
+			<div class="header-main">
+				<div class="header-main__title">Отдых в Крыму на курорте «Утес» 
+				в гостевом доме «Лагуна»
+				</div>
+				<div class="fields header-main__fields">
+					<div class="fields__input fields__input_size-s  fields__input_pseudo"><input type="date" name="" value=""></div>
+					<div class="fields__input fields__input_size-s fields__input_pseudo"><input type="date" name=""></div>
+					<div class="fields__input fields__input_size-s fields__input_no-right-border  fields__input_pseudo fields__input_pseudo_number"><select id="number" name="number">
+						<option>Номер</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select></div>
+				</div>
+				<div class="main-button header-main__main-button btn-open">Забронировать</div>
+			</div>
+		</header>
+
+		<div class="main">
+			<div class="main-title main__main-title">Ознакомиться с номерами отеля</div>
+			<div class="main-wrapper main__main-wrapper">
+
+				<div class="main-block">
+					<div class="main-block__left-side">
+						<div class="main-block__title" id="advantages">Преимущества</div>
+						Гостевой дом «Лагуна» предлагает своим гостям размещение 
+						в просторных комфортабельных номерах, оборудованных всем необходимым  для приятного отдыха, класса 2-местный стандарт. 
+						В каждом номере: мебель, телевизор (кабельное тв), кондиционер, электрочайник,  мини – холодильник, сейф, сан.узел. 
+						<div class="main-block__icons main-block__icons_margin-size-s"><img src="img/icons-shower.svg"></div>
+						Подача холодной и горячей воды осуществляется круглосуточно. Номера на южную сторону – с огромными панорамными окнами от пола до потолка, широкими балконами. На балконах летние плетеные столик и стулья.  На крыше  Гостевого дома расположена просторная видовая терраса, любимое место отдыха гостей. Имеется оборудованная кухня для самостоятельного приготовления пищи.
+						<br><br>
+						Расстояние до моря от Гостевого дома Laguna составляет около 30 метров.
+					</div>
+					<div class="main-block__right-side">
+						<div class="slider">
+							<div class="slider__full-photo"></div>
+							<div class="slider__mini-photoes">
+								<div class="slider__mini-photo"></div>
+								<div class="slider__mini-photo"></div>
+								<div class="slider__mini-photo"></div>
+								<div class="slider__mini-photo"></div>
+								<div class="slider__mini-photo"></div>
+							</div>
+						</div>
+						<div ><a href="" class="main__link">Смотреть 23 фотографии</a></div>
+					</div>
+				</div>
+
+				<div class="main-block">
+					<div class="main-block__left-side">
+						<div class="main-block__title" id="service">Услуги</div>
+						Беслплатные услуги:<br>
+						— Пользование оборудованной общей кухней, террасой;<br>
+						— Шезлонги с матрасом;<br>
+						— Прачечная с самостоятельным обслуживанием <br>
+						(стиральная машина, гладильная доска, утюг). <br>
+						<div class="main-block__icons main-block__icons_margin-size-m"><img src="img/icons-freeuslugi.svg"></div>
+						Платные услуги:<br>
+						— Автостоянка;<br>
+						— Трансфер (от аэропорта, жд вокзала).
+						<div class="main-block__icons main-block__icons_margin-size-m main-block__icons_no-margin-bottom"><img src="img/icons-plantnieuslugi.svg"></div>
+					</div>
+					<div class="main-block__right-side">
+						<div class="main__picture main__picture_size-m"></div>
+					</div>
+				</div>
+
+				<div class="main-block">
+					<div class="main-block__left-side">
+						<div class="main-block__title" id="prices">Цены</div>
+						Стоимость  от 2100 до 3300 рублей  в сутки за номер в зависимости от месяца, срока проживания, расположения номера (юг-север) и этажа.<br><br>
+
+						Бронирование номеров действует по факту предоплаты (стоимость за 1 сутки проживания). <br><br>
+
+						После получения предоплаты, мы сразу подтверждаем факт получения денег и окончательно бронируем и держим жилье на ваши даты заезда.<br><br>
+
+						В Гостевом доме Лагуна, Крым, Утес периодически действуют скидки на проживание, о которых Вы можете узнать,позвонив нам по указанным на сайте телефонам. 
+						</div>
+					<div class="main-block__right-side">
+						<div class="table">
+						<table class="table">
+							<tr class="table__row">
+								<td>Категории номеров</td>
+								<td>01.06 - 30.06</td>
+								<td>01.07 - 31.08</td>
+								<td>01.09 - 31.09</td>
+							</tr>
+							<tr class="table__row">
+								<td>Со своим двориком 4 эт</td>
+								<td>2700 руб</td>
+								<td>3300 руб</td>
+								<td>2700 руб</td>
+							</tr>
+							<tr class="table__row">
+								<td>Южная сторона 3 эт.</td>
+								<td>2700 руб</td>
+								<td>3300 руб</td>
+								<td>2700 руб</td>
+							</tr>
+							<tr class="table__row">
+								<td>Северная сторона 5 эт.</td>
+								<td>2700 руб</td>
+								<td>3300 руб</td>
+								<td>2700 руб</td>
+							</tr>
+							<tr class="table__row">
+								<td>Южная сторона 3 эт.</td>
+								<td>2700 руб</td>
+								<td>3300 руб</td>
+								<td>2700 руб</td>
+							</tr>
+							<tr class="table__row">
+								<td>Северная сторона 3 эт.</td>
+								<td>2700 руб</td>
+								<td>3300 руб</td>
+								<td>2700 руб</td>
+							</tr>
+						</table>
+					</div>
+					<div ><a href="" class="main__link">Забронировать номер</a></div>
+				</div>
+			</div>
+
+			<div class="main-block">
+					<div class="main-block__left-side">
+						<div class="main-block__title" id="location">Расположение</div>
+						Гостевой дом “Laguna” находится в одном из красивейших уголков ЮБК в поселке Утёс,который расположен между курортами Алушта и Ялта рядом с Партенитом.Поселок Утёс,Крым,считается одним из наиболее экологически чистых курортов Южного берега Крыма.<br><br>
+
+						Поселок Утёс, Крым (по-другому его называют Санта-Барбара) почти полностью состоит из отелей, эллингов, пансионатов и частных мини-гостиниц, находящихся на самом берегу моря.Крым, Утёс очень многие выбирают для отличного отдыха!<br><br>
+
+						Уютные кафе с негромкой музыкой, расположенные на набережной 
+						в стиле французских курортов, хороший сервис – всё это создает атмосферу комфортного и беззаботного отдыха в Утёсе  для всех гостей.
+					</div>
+					<div class="main-block__right-side">
+						<div class="main__picture main__picture_size-s"></div>
+					</div>
+				</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
