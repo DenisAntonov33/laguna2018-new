@@ -1,0 +1,93 @@
+/////////////////////////////
+//      modal-window       //
+/////////////////////////////
+
+.modal-overlay 
+	display none
+	z-index 9
+	width 100%
+	height 100%
+	position fixed
+	top 0
+	left 0
+	background-color rgba(0,0,0,0.5)
+	
+.open
+	display block !important
+
+
+.modal-window 
+	display none
+	position fixed
+	width 35%
+	height 770px
+	top 160px
+	left 33%
+	right 32%
+	z-index 10
+	background-color #fff
+	&-container 
+		width 90%
+		height 90%
+		margin 30px auto 0
+		padding-top 50px
+		box-sizing border-box
+		text-align center
+		position relative
+	&__title
+		font-family Circe-Bold
+		font-size 29px
+	&__close
+		display block
+		content ""
+		position: absolute
+		width 15px
+		height 15px
+		background-image url(../img/close-icon.svg)
+		top 0
+		right 0
+		background-repeat no-repeat
+		cursor pointer
+	&__main-button
+		margin 0 auto
+	input,select
+		background-color #f2f2f2
+
+.modal-window-container form 
+	width 75%
+	height 90%
+	margin 40px auto 0px
+
+.value-guests 
+	width 200px
+	height 80px
+	margin 20px auto
+
+
+.value-guests-inner 
+	button 
+		display inline-block
+		width 10px
+		height 20px
+		background-image url(../img/plus-icon.svg)
+		background-repeat no-repeat
+		background-position 50%
+		background-color #fff
+		border 0
+		cursor pointer
+	.btn-minus 
+		background-image url(../img/minus-icon.svg)
+	span 
+		font-size 29px
+		font-family 'Circe-Bold'
+		margin 15px
+
+.value-guests-outer 
+	display block
+	margin-top 15px
+	color #d12f2f
+
+.disabled
+	cursor default !important
+	background none !important
+	border none

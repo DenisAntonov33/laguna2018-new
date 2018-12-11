@@ -3,6 +3,7 @@ var stylus = require("gulp-stylus");
 var htmlmin = require("gulp-htmlmin");
 var browserSync = require("browser-sync");
 var plumber = require("gulp-plumber");
+var autoPrefixer = require("gulp-autoprefixer");
 
 gulp.task("minify", function () {
 	return gulp.src("src/html/**/*.html")
@@ -22,6 +23,7 @@ gulp.task("stylus", function () {
 	return gulp.src("src/styles/**/*")
 	.pipe(plumber())
 	.pipe(stylus())
+	.pipe(autoPrefixer(["last 20 versions", "> 1%", "ie >= 10"], {cascade:true}))
 	.pipe(gulp.dest("dist/css"))
 	.pipe(browserSync.reload({stream: true}))
 });
