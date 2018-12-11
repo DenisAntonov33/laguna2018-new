@@ -4,6 +4,7 @@ var htmlmin = require("gulp-htmlmin");
 var browserSync = require("browser-sync");
 var plumber = require("gulp-plumber");
 var autoPrefixer = require("gulp-autoprefixer");
+var del = require("del");
 
 gulp.task("minify", function () {
 	return gulp.src("src/html/**/*.html")
@@ -50,6 +51,10 @@ gulp.task("b-sync", function () {
 	})
 });
 
+gulp.task("clean", function () {
+	return del.sync("dist");
+})
+
 gulp.task("watch", ["b-sync", "images", "fonts", "minify", "stylus", "js"], function () {
 	gulp.watch("src/html/**/*.html", ["minify"]);
 	gulp.watch("src/styles/**/*", ["stylus"]);
@@ -57,3 +62,6 @@ gulp.task("watch", ["b-sync", "images", "fonts", "minify", "stylus", "js"], func
 	gulp.watch("src/assets/fonts/*", ["fonts"]);
 	gulp.watch("src/assets/js/index.js", ["js"]);
 });
+
+gulp.task("default", ["clean", "watch"]);
+
